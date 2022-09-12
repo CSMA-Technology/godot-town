@@ -4,27 +4,27 @@
 [ext_resource path="res://Car.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Pedestrian.tscn" type="PackedScene" id=3]
 
-[sub_resource type="NavigationPolygon" id=17]
+[sub_resource type="NavigationPolygon" id=51]
 vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 
-[sub_resource type="NavigationPolygon" id=18]
+[sub_resource type="NavigationPolygon" id=54]
 vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 
-[sub_resource type="NavigationPolygon" id=19]
+[sub_resource type="NavigationPolygon" id=71]
 vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 
-[sub_resource type="NavigationPolygon" id=20]
+[sub_resource type="NavigationPolygon" id=72]
 vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 
-[sub_resource type="NavigationPolygon" id=46]
+[sub_resource type="NavigationPolygon" id=73]
 vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
@@ -40,7 +40,7 @@ outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 0/autotile/tile_size = Vector2( 16, 16 )
 0/autotile/spacing = 0
 0/autotile/occluder_map = [  ]
-0/autotile/navpoly_map = [ Vector2( 8, 1 ), SubResource( 17 ), Vector2( 8, 2 ), SubResource( 18 ), Vector2( 9, 1 ), SubResource( 19 ), Vector2( 9, 2 ), SubResource( 20 ), Vector2( 10, 1 ), SubResource( 46 ) ]
+0/autotile/navpoly_map = [ Vector2( 0, 1 ), SubResource( 51 ), Vector2( 1, 1 ), SubResource( 54 ), Vector2( 9, 1 ), SubResource( 71 ), Vector2( 9, 2 ), SubResource( 72 ), Vector2( 10, 1 ), SubResource( 73 ) ]
 0/autotile/priority_map = [ Vector3( 1, 0, 2 ) ]
 0/autotile/z_index_map = [  ]
 0/occluder_offset = Vector2( 0, 0 )
