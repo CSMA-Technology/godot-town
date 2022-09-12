@@ -13,10 +13,10 @@ func _physics_process(delta):
 	else:
 		move_towards_goal(delta * speed)
 
-func move_towards_goal(speed):
+func move_towards_goal(current_speed): 
 	# Get a unit-length vector pointing in the direction we want to go
 	var direction = (goal_pos - global_position).normalized()
 	# Apply our speed to the direction vector to get our movement vector
-	var movement = direction * speed
+	var movement = direction * current_speed
 	# Move our KinematicBody2D node
 	move_and_collide(movement)
