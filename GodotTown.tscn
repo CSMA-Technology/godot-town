@@ -1,6 +1,8 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/tilemap_packed.png" type="Texture" id=1]
+[ext_resource path="res://Car.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Pedestrian.tscn" type="PackedScene" id=3]
 
 [sub_resource type="NavigationPolygon" id=17]
 vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -397,3 +399,72 @@ tile_set = SubResource( 49 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 65558, 4, 0, 65561, 4, 0, 65564, 4, 0, 65567, 4, 0, 65570, 4, 0, 65573, 4, 0, 131093, 9, 0, 131096, 9, 0, 131104, 9, 65536, 131112, 9, 65536, 196616, 4, 0, 196619, 4, 0, 196622, 4, 0, 196625, 9, 65536, 196628, 9, 0, 262149, 9, 65536, 262154, 9, 0, 262157, 9, 0, 327697, 4, 0, 327698, 9, 0, 327700, 4, 0, 458788, 6, 0, 524305, 4, 0, 524306, 9, 0, 524307, 9, 65536, 524308, 4, 0, 589856, 9, 0, 655366, 9, 0, 655369, 9, 65536, 655378, 9, 65536, 720913, 4, 0, 720914, 9, 65536, 720915, 9, 65536, 720916, 4, 0, 720923, 9, 65536, 786451, 9, 0, 786467, 9, 0, 786472, 9, 65536, 851994, 9, 65536, 851998, 9, 65536, 852000, 9, 0, 917515, 9, 0, 917540, 9, 0, 917544, 9, 0, 983057, 10, 0, 983058, 10, 1, 983059, 10, 1, 983060, 10, 2, 1114152, 9, 65536, 1179659, 9, 0, 1179663, 5, 0, 1179675, 9, 0, 1245206, 8, 0, 1245210, 9, 65536, 1245214, 9, 65536, 1245216, 9, 65536, 1245219, 9, 0, 1441803, 9, 0, 1507342, 9, 0, 1507352, 9, 65536, 1507361, 9, 0, 1572900, 9, 65536, 1703962, 9, 65536, 1769505, 9, 65536, 1835029, 1, 0, 2031659, 9, 65536 )
+
+[node name="CarGoal" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2( 25, 134 )
+
+[node name="PedestrianGoal" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2( 302, 304 )
+
+[node name="Cars" type="Node" parent="."]
+
+[node name="Car" parent="Cars" instance=ExtResource( 2 )]
+position = Vector2( 619, 417 )
+
+[node name="Car2" parent="Cars" instance=ExtResource( 2 )]
+modulate = Color( 0.0666667, 0.835294, 0.87451, 1 )
+position = Vector2( 359, 428 )
+
+[node name="Car3" parent="Cars" instance=ExtResource( 2 )]
+modulate = Color( 0.14902, 0.2, 0.729412, 1 )
+position = Vector2( 662, 471 )
+
+[node name="Car4" parent="Cars" instance=ExtResource( 2 )]
+modulate = Color( 0.270588, 0.835294, 0.266667, 1 )
+position = Vector2( 569, 418 )
+
+[node name="Car5" parent="Cars" instance=ExtResource( 2 )]
+modulate = Color( 0.737255, 0.45098, 0.45098, 1 )
+position = Vector2( 271, 414 )
+
+[node name="People" type="Node" parent="."]
+
+[node name="Pedestrian" parent="People" instance=ExtResource( 3 )]
+
+[node name="Pedestrian2" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 355, 62 )
+
+[node name="Pedestrian3" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0.827451, 0, 1, 1 )
+position = Vector2( 82, 93 )
+
+[node name="Pedestrian4" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0.654902, 0.615686, 0.941176, 1 )
+position = Vector2( 352, 171 )
+
+[node name="Pedestrian5" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0.0745098, 0.996078, 0.0470588, 1 )
+position = Vector2( 257, 207 )
+
+[node name="Pedestrian6" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0.992157, 0.054902, 1, 1 )
+position = Vector2( 584, 60 )
+
+[node name="Pedestrian7" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 1, 0.470588, 0, 1 )
+position = Vector2( 464, 59 )
+
+[node name="Pedestrian8" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0.533333, 0.439216, 0.439216, 1 )
+position = Vector2( 173, 95 )
+
+[node name="Pedestrian9" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0, 0.976471, 1, 1 )
+position = Vector2( 259, 294 )
+
+[node name="Pedestrian10" parent="People" instance=ExtResource( 3 )]
+modulate = Color( 0.956863, 0.368627, 0.368627, 1 )
+position = Vector2( 352, 232 )

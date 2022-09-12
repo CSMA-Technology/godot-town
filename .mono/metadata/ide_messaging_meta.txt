@@ -1,2 +1,2 @@
-﻿50345
-/Users/scruz/DevTools/Godot/godot-3.5/Godot_mono.app/Contents/MacOS/Godot
+﻿11208
+P:/Program Files/Godot/Godot_v3.5-stable_mono_win64/Godot_v3.5-stable_mono_win64.exe
