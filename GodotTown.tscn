@@ -1,33 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/tilemap_packed.png" type="Texture" id=1]
 [ext_resource path="res://Car.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Pedestrian.tscn" type="PackedScene" id=3]
-
-[sub_resource type="NavigationPolygon" id=51]
-vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
-outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
-
-[sub_resource type="NavigationPolygon" id=54]
-vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
-outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
-
-[sub_resource type="NavigationPolygon" id=71]
-vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
-outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
-
-[sub_resource type="NavigationPolygon" id=72]
-vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
-outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
-
-[sub_resource type="NavigationPolygon" id=73]
-vertices = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
-outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 
 [sub_resource type="TileSet" id=47]
 0/name = "Roads"
@@ -40,7 +15,7 @@ outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 0/autotile/tile_size = Vector2( 16, 16 )
 0/autotile/spacing = 0
 0/autotile/occluder_map = [  ]
-0/autotile/navpoly_map = [ Vector2( 0, 1 ), SubResource( 51 ), Vector2( 1, 1 ), SubResource( 54 ), Vector2( 9, 1 ), SubResource( 71 ), Vector2( 9, 2 ), SubResource( 72 ), Vector2( 10, 1 ), SubResource( 73 ) ]
+0/autotile/navpoly_map = [  ]
 0/autotile/priority_map = [ Vector3( 1, 0, 2 ) ]
 0/autotile/z_index_map = [  ]
 0/occluder_offset = Vector2( 0, 0 )
@@ -114,7 +89,7 @@ outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
-4/name = "tilemap_packed.png 4"
+4/name = "grass autotile"
 4/texture = ExtResource( 1 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
@@ -137,7 +112,7 @@ outlines = [ PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 ) ]
 4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
-5/name = "tilemap_packed.png 5"
+5/name = "water autotile"
 5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
