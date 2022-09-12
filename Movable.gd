@@ -16,7 +16,7 @@ func _physics_process(delta):
 	else:
 		move_towards_goal(delta * speed)
 
-func move_towards_goal(speed):
+func move_towards_goal(current_speed):
 	# If the path is null or empty, create it and return. 
 	if not path:
 		# map_get_path returns an array of points, ending at the goal if it is reachable
@@ -29,5 +29,5 @@ func move_towards_goal(speed):
 		path_idx += 1
 	# Same logic as before, but this time going to the next point in the path instead of the goal
 	var direction = (path[path_idx] - global_position).normalized()
-	var movement = direction * speed
+	var movement = direction * current_speed
 	move_and_collide(movement)
