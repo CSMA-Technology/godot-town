@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Movable.gd" type="Script" id=1]
+[ext_resource path="res://MovableWithAgent.gd" type="Script" id=1]
 [ext_resource path="res://assets/tilemap_packed.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=50]
@@ -10,7 +10,6 @@ extents = Vector2( 5, 8 )
 position = Vector2( 255, 119 )
 script = ExtResource( 1 )
 goal = "%PedestrianGoal"
-nav_layer = 2
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
@@ -20,3 +19,12 @@ region_rect = Rect2( 384, 0, 16, 16 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource( 50 )
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+navigation_layers = 2
+avoidance_enabled = true
+radius = 8.0
+neighbor_dist = 200.0
+time_horizon = 75.0
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_NavigationAgent2D_velocity_computed"]
