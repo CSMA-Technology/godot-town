@@ -561,12 +561,12 @@ position = Vector2( 82, 93 )
 [node name="Pedestrian4" parent="People" instance=ExtResource( 3 )]
 modulate = Color( 0.654902, 0.615686, 0.941176, 1 )
 position = Vector2( 352, 171 )
-speed = 10
+current_speed = 10
 
 [node name="Pedestrian5" parent="People" instance=ExtResource( 3 )]
 modulate = Color( 0.0745098, 0.996078, 0.0470588, 1 )
 position = Vector2( 257, 207 )
-speed = 10
+current_speed = 10
 
 [node name="Pedestrian6" parent="People" instance=ExtResource( 3 )]
 modulate = Color( 0.992157, 0.054902, 1, 1 )
